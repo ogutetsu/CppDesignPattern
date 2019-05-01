@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEAB322799ECD006C7DB1 /* main.cpp */; };
+		9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		9EFAEAB022799ECD006C7DB1 /* CppDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFAEAB322799ECD006C7DB1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SingleResponsibilityPrinciple.cpp; path = SOLID/SingleResponsibilityPrinciple.cpp; sourceTree = "<group>"; };
+		9EFAEABD2279A760006C7DB1 /* SingleResponsibilityPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SingleResponsibilityPrinciple.hpp; path = SOLID/SingleResponsibilityPrinciple.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9EFAEABB2279A71F006C7DB1 /* SOLID */,
 				9EFAEAB322799ECD006C7DB1 /* main.cpp */,
 			);
 			path = CppDesignPattern;
+			sourceTree = "<group>";
+		};
+		9EFAEABB2279A71F006C7DB1 /* SOLID */ = {
+			isa = PBXGroup;
+			children = (
+				9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */,
+				9EFAEABD2279A760006C7DB1 /* SingleResponsibilityPrinciple.hpp */,
+			);
+			name = SOLID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +253,7 @@
 		9EFAEAB822799ECD006C7DB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +262,7 @@
 		9EFAEAB922799ECD006C7DB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
