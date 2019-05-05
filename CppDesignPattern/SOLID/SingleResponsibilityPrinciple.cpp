@@ -51,7 +51,7 @@ struct PersistenceManager
             ofs << e << endl;
         }
     }
-}
+};
 
 
 void SingleResponsibilityPrincipleMain()
