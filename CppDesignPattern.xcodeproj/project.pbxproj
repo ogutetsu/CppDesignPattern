@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0C04A12280D64D00694419 /* LiskovSubstitutionPrinciple.cpp */; };
 		9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */; };
+		9E6285422283740E003C7D96 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285402283740E003C7D96 /* Builder.cpp */; };
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
 		9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEAB322799ECD006C7DB1 /* main.cpp */; };
@@ -32,6 +33,8 @@
 		9E0C04A22280D64D00694419 /* LiskovSubstitutionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = LiskovSubstitutionPrinciple.hpp; path = SOLID/LiskovSubstitutionPrinciple.hpp; sourceTree = "<group>"; };
 		9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OpenClosedPrinciple.cpp; path = SOLID/OpenClosedPrinciple.cpp; sourceTree = "<group>"; };
 		9E0D36C2227ED6A000286300 /* OpenClosedPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = OpenClosedPrinciple.hpp; path = SOLID/OpenClosedPrinciple.hpp; sourceTree = "<group>"; };
+		9E6285402283740E003C7D96 /* Builder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Builder.cpp; sourceTree = "<group>"; };
+		9E6285412283740E003C7D96 /* Builder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Builder.hpp; sourceTree = "<group>"; };
 		9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = InterfaceSegregationPrinciple.cpp; path = SOLID/InterfaceSegregationPrinciple.cpp; sourceTree = "<group>"; };
 		9E634D0F2281B4F70096C463 /* InterfaceSegregationPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = InterfaceSegregationPrinciple.hpp; path = SOLID/InterfaceSegregationPrinciple.hpp; sourceTree = "<group>"; };
 		9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DependencyInversionPrinciple.cpp; path = SOLID/DependencyInversionPrinciple.cpp; sourceTree = "<group>"; };
@@ -53,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E62853F228373F0003C7D96 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				9E6285402283740E003C7D96 /* Builder.cpp */,
+				9E6285412283740E003C7D96 /* Builder.hpp */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		9EFAEAA722799ECD006C7DB1 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +84,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9E62853F228373F0003C7D96 /* Builder */,
 				9EFAEABB2279A71F006C7DB1 /* SOLID */,
 				9EFAEAB322799ECD006C7DB1 /* main.cpp */,
 			);
@@ -151,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6285422283740E003C7D96 /* Builder.cpp in Sources */,
 				9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */,
 				9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */,
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
