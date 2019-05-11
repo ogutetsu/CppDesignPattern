@@ -19,8 +19,11 @@
 using namespace std;
 
 
-struct HtmlElement
+class HtmlBuilder;
+
+class HtmlElement
 {
+    friend class HtmlBuilder;
     string name, text;
     vector<HtmlElement> elements;
     const size_t indent_size = 2;
@@ -29,6 +32,7 @@ struct HtmlElement
     
     HtmlElement(const string &name, const string &text) : name(name), text(text) {}
     
+public:
     string str(int indent = 0) const {
         ostringstream oss;
         string indentstr(indent_size*indent, ' ');
@@ -42,24 +46,38 @@ struct HtmlElement
         oss << indentstr << "</" << name << ">" << endl;
         return oss.str();
     }
+    
+    static unique_ptr<HtmlBuilder> build(string rootName)
+    {
+        return make_unique<HtmlBuilder>(rootName);
+    }
+    
 };
 
-struct HtmlBuilder
+class HtmlBuilder
 {
     HtmlElement root;
-    
+public:
     HtmlBuilder(string rootName)
     {
         root.name = rootName;
     }
-    void addChild(string childName, string childText)
+    HtmlBuilder& addChild(string childName, string childText)
     {
         HtmlElement e{childName, childText};
         root.elements.emplace_back(e);
+        return *this;
+    }
+    HtmlBuilder* pAddChild(string childName, string childText)
+    {
+        HtmlElement e{childName, childText};
+        root.elements.emplace_back(e);
+        return this;
     }
     
     string str() const { return root.str(); }
     
+    operator HtmlElement() const { return root; }
 };
 
 
@@ -81,9 +99,14 @@ void BuilderMain()
     cout << oss.str() << endl;
     
     HtmlBuilder builder{"ul"};
-    builder.addChild("li", "hello");
-    builder.addChild("li", "world");
+    builder.addChild("li", "hello").addChild("li", "world");
     
     cout << builder.str() << endl;
+    
+    auto builder2 = HtmlElement::build("ul")->pAddChild("li", "hello")->pAddChild("li", "world");
+    
+    cout << builder2 << endl;
+    
+    
 }
 
