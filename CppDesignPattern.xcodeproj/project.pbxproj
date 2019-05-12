@@ -12,6 +12,7 @@
 		9E6285422283740E003C7D96 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285402283740E003C7D96 /* Builder.cpp */; };
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
+		9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */; };
 		9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEAB322799ECD006C7DB1 /* main.cpp */; };
 		9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,8 @@
 		9E634D0F2281B4F70096C463 /* InterfaceSegregationPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = InterfaceSegregationPrinciple.hpp; path = SOLID/InterfaceSegregationPrinciple.hpp; sourceTree = "<group>"; };
 		9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DependencyInversionPrinciple.cpp; path = SOLID/DependencyInversionPrinciple.cpp; sourceTree = "<group>"; };
 		9E634D122281BD640096C463 /* DependencyInversionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DependencyInversionPrinciple.hpp; path = SOLID/DependencyInversionPrinciple.hpp; sourceTree = "<group>"; };
+		9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GroovyStyle.cpp; sourceTree = "<group>"; };
+		9ECC617B22880ED400E2CB15 /* GroovyStyle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GroovyStyle.hpp; sourceTree = "<group>"; };
 		9EFAEAB022799ECD006C7DB1 /* CppDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFAEAB322799ECD006C7DB1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SingleResponsibilityPrinciple.cpp; path = SOLID/SingleResponsibilityPrinciple.cpp; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 			children = (
 				9E6285402283740E003C7D96 /* Builder.cpp */,
 				9E6285412283740E003C7D96 /* Builder.hpp */,
+				9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */,
+				9ECC617B22880ED400E2CB15 /* GroovyStyle.hpp */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
 				9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */,
 				9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */,
+				9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
