@@ -8,9 +8,17 @@
 
 #include <iostream>
 
+extern void OpenClosedMain();
+extern void LiskovMain();
+extern void DependencyMain();
+extern void BuilderMain();
+extern void GroovyStyleMain();
+extern void BuilderFactetsMain();
+extern void FactoryMain();
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    FactoryMain();
     return 0;
 }
 
