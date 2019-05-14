@@ -16,6 +16,7 @@
 		9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */; };
 		9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC6180228817BD00E2CB15 /* Person.cpp */; };
 		9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC61832288180D00E2CB15 /* PersonBuilder.cpp */; };
+		9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC618D2288B83900E2CB15 /* Factory.cpp */; };
 		9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEAB322799ECD006C7DB1 /* main.cpp */; };
 		9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,8 @@
 		9ECC61842288180D00E2CB15 /* PersonBuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PersonBuilder.hpp; sourceTree = "<group>"; };
 		9ECC6187228819D000E2CB15 /* PersonAddressBuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PersonAddressBuilder.hpp; sourceTree = "<group>"; };
 		9ECC618A22881BE200E2CB15 /* PersonJobBuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PersonJobBuilder.hpp; sourceTree = "<group>"; };
+		9ECC618D2288B83900E2CB15 /* Factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Factory.cpp; path = Factory/Factory.cpp; sourceTree = "<group>"; };
+		9ECC618E2288B83900E2CB15 /* Factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Factory.hpp; path = Factory/Factory.hpp; sourceTree = "<group>"; };
 		9EFAEAB022799ECD006C7DB1 /* CppDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFAEAB322799ECD006C7DB1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SingleResponsibilityPrinciple.cpp; path = SOLID/SingleResponsibilityPrinciple.cpp; sourceTree = "<group>"; };
@@ -89,6 +92,15 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		9ECC618C2288B80D00E2CB15 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				9ECC618D2288B83900E2CB15 /* Factory.cpp */,
+				9ECC618E2288B83900E2CB15 /* Factory.hpp */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
 		9EFAEAA722799ECD006C7DB1 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9ECC618C2288B80D00E2CB15 /* Factory */,
 				9E62853F228373F0003C7D96 /* Builder */,
 				9EFAEABB2279A71F006C7DB1 /* SOLID */,
 				9EFAEAB322799ECD006C7DB1 /* main.cpp */,
@@ -192,6 +205,7 @@
 				9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */,
 				9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */,
 				9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */,
+				9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */,
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
 				9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */,
