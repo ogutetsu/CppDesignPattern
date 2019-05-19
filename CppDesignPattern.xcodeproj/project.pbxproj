@@ -12,6 +12,7 @@
 		9E6285422283740E003C7D96 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285402283740E003C7D96 /* Builder.cpp */; };
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
+		9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */; };
 		9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */; };
 		9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */; };
 		9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC6180228817BD00E2CB15 /* Person.cpp */; };
@@ -44,6 +45,11 @@
 		9E634D0F2281B4F70096C463 /* InterfaceSegregationPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = InterfaceSegregationPrinciple.hpp; path = SOLID/InterfaceSegregationPrinciple.hpp; sourceTree = "<group>"; };
 		9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DependencyInversionPrinciple.cpp; path = SOLID/DependencyInversionPrinciple.cpp; sourceTree = "<group>"; };
 		9E634D122281BD640096C463 /* DependencyInversionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DependencyInversionPrinciple.hpp; path = SOLID/DependencyInversionPrinciple.hpp; sourceTree = "<group>"; };
+		9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AbstractFactory.cpp; path = Factory/AbstractFactory.cpp; sourceTree = "<group>"; };
+		9EA5CF682291F4C400B06B5D /* AbstractFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AbstractFactory.hpp; path = Factory/AbstractFactory.hpp; sourceTree = "<group>"; };
+		9EA5CF6B2291F60900B06B5D /* HotDrinkFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HotDrinkFactory.hpp; path = Factory/HotDrinkFactory.hpp; sourceTree = "<group>"; };
+		9EA5CF6E2291F62C00B06B5D /* HotDrink.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HotDrink.hpp; path = Factory/HotDrink.hpp; sourceTree = "<group>"; };
+		9EA5CF712291F84800B06B5D /* DrinkFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DrinkFactory.hpp; path = Factory/DrinkFactory.hpp; sourceTree = "<group>"; };
 		9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GroovyStyle.cpp; sourceTree = "<group>"; };
 		9ECC617B22880ED400E2CB15 /* GroovyStyle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GroovyStyle.hpp; sourceTree = "<group>"; };
 		9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BuilderFactets.cpp; sourceTree = "<group>"; };
@@ -97,6 +103,11 @@
 			children = (
 				9ECC618D2288B83900E2CB15 /* Factory.cpp */,
 				9ECC618E2288B83900E2CB15 /* Factory.hpp */,
+				9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */,
+				9EA5CF682291F4C400B06B5D /* AbstractFactory.hpp */,
+				9EA5CF6B2291F60900B06B5D /* HotDrinkFactory.hpp */,
+				9EA5CF6E2291F62C00B06B5D /* HotDrink.hpp */,
+				9EA5CF712291F84800B06B5D /* DrinkFactory.hpp */,
 			);
 			name = Factory;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 				9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */,
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
+				9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */,
 				9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */,
 				9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */,
 				9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */,
