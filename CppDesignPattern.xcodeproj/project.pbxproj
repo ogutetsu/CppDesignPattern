@@ -12,6 +12,7 @@
 		9E6285422283740E003C7D96 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285402283740E003C7D96 /* Builder.cpp */; };
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
+		9E99C52F22973D3800AC60AE /* Prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E99C52D22973D3800AC60AE /* Prototype.cpp */; };
 		9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */; };
 		9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */; };
 		9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */; };
@@ -45,6 +46,8 @@
 		9E634D0F2281B4F70096C463 /* InterfaceSegregationPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = InterfaceSegregationPrinciple.hpp; path = SOLID/InterfaceSegregationPrinciple.hpp; sourceTree = "<group>"; };
 		9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DependencyInversionPrinciple.cpp; path = SOLID/DependencyInversionPrinciple.cpp; sourceTree = "<group>"; };
 		9E634D122281BD640096C463 /* DependencyInversionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DependencyInversionPrinciple.hpp; path = SOLID/DependencyInversionPrinciple.hpp; sourceTree = "<group>"; };
+		9E99C52D22973D3800AC60AE /* Prototype.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Prototype.cpp; path = Prototype/Prototype.cpp; sourceTree = "<group>"; };
+		9E99C52E22973D3800AC60AE /* Prototype.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Prototype.hpp; path = Prototype/Prototype.hpp; sourceTree = "<group>"; };
 		9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AbstractFactory.cpp; path = Factory/AbstractFactory.cpp; sourceTree = "<group>"; };
 		9EA5CF682291F4C400B06B5D /* AbstractFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AbstractFactory.hpp; path = Factory/AbstractFactory.hpp; sourceTree = "<group>"; };
 		9EA5CF6B2291F60900B06B5D /* HotDrinkFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HotDrinkFactory.hpp; path = Factory/HotDrinkFactory.hpp; sourceTree = "<group>"; };
@@ -98,6 +101,15 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		9E99C52C22973CF400AC60AE /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				9E99C52D22973D3800AC60AE /* Prototype.cpp */,
+				9E99C52E22973D3800AC60AE /* Prototype.hpp */,
+			);
+			name = Prototype;
+			sourceTree = "<group>";
+		};
 		9ECC618C2288B80D00E2CB15 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +143,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9E99C52C22973CF400AC60AE /* Prototype */,
 				9ECC618C2288B80D00E2CB15 /* Factory */,
 				9E62853F228373F0003C7D96 /* Builder */,
 				9EFAEABB2279A71F006C7DB1 /* SOLID */,
@@ -216,6 +229,7 @@
 				9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */,
 				9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */,
 				9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */,
+				9E99C52F22973D3800AC60AE /* Prototype.cpp in Sources */,
 				9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */,
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
