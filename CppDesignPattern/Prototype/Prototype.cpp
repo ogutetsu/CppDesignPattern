@@ -22,6 +22,13 @@ struct Address
         street(street), city(city), suite(suite)
     {}
     
+    Address(const Address& address) :
+    street{address.street}, city{address.city}, suite{address.suite}
+    {
+        
+    }
+    
+    
     friend ostream& operator<<(ostream& os, const Address& obj)
     {
         return os << "street: " << obj.street << " city: " << obj.city << " suite: " << obj.suite;
@@ -33,11 +40,17 @@ struct Address
 struct Contact
 {
     string name;
-    Address address;
+    Address* address;
     
-    Contact(const string& name, const Address& address) :
+    Contact(const string& name, Address* address) :
         name(name), address(address)
     {}
+    
+    Contact(const Contact& other) :
+    name { other.name }, address { new Address { *other.address }}
+    {
+        
+    }
     
     friend ostream& operator<<(ostream& os, Contact& contact)
     {
@@ -48,10 +61,10 @@ struct Contact
 
 void PrototypeMain()
 {
-    Contact john{"John Doe", Address{"123 East Dr", "London", 123}};
+    Contact john{"John Doe", new Address{"123 East Dr", "London", 123}};
     //Contact jane{"Jane Smith", Address{"123 East Dr", "London", 103}};
-    Contact jane = john;
+    Contact jane {john}; //shallow copy
     jane.name = "Jane Smith";
-    jane.address.suite = 103;
+    jane.address->suite = 103;
     cout << john << endl << jane << endl;
 }
