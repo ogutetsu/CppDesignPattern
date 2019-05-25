@@ -54,17 +54,31 @@ struct Contact
     
     friend ostream& operator<<(ostream& os, Contact& contact)
     {
-        return os << "name: " << contact.name << " address: " << contact.address;
+        return os << "name: " << contact.name << " address: " << *contact.address;
     }
 };
 
+struct EmployeeFactory
+{
+    static unique_ptr<Contact> new_main_office_employee
+        (const string& name, const int suite)
+    {
+        static Contact p{"", new Address {"123 East Dr", "London", 0 }};
+        return new_employee(name, suite, p);
+    }
+private:
+    static unique_ptr<Contact> new_employee(const string& name, int suite, const Contact& prototype)
+    {
+        auto result = make_unique<Contact>(prototype);
+        result->name = name;
+        result->address->suite = suite;
+        return result;
+    }
+};
 
 void PrototypeMain()
 {
-    Contact john{"John Doe", new Address{"123 East Dr", "London", 123}};
-    //Contact jane{"Jane Smith", Address{"123 East Dr", "London", 103}};
-    Contact jane {john}; //shallow copy
-    jane.name = "Jane Smith";
-    jane.address->suite = 103;
-    cout << john << endl << jane << endl;
+    auto john = EmployeeFactory::new_main_office_employee("John", 123);
+    
+    cout << *john <<  endl;
 }
