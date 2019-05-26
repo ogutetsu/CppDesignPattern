@@ -52,6 +52,8 @@ struct Contact
         
     }
     
+    ~Contact() { delete address; }
+    
     friend ostream& operator<<(ostream& os, Contact& contact)
     {
         return os << "name: " << contact.name << " address: " << *contact.address;
