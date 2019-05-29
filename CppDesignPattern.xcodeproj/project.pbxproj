@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0C04A12280D64D00694419 /* LiskovSubstitutionPrinciple.cpp */; };
 		9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */; };
+		9E39725B229F265B001436A7 /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E397259229F265B001436A7 /* Singleton.cpp */; };
 		9E6285422283740E003C7D96 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285402283740E003C7D96 /* Builder.cpp */; };
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
@@ -40,6 +41,9 @@
 		9E0C04A22280D64D00694419 /* LiskovSubstitutionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = LiskovSubstitutionPrinciple.hpp; path = SOLID/LiskovSubstitutionPrinciple.hpp; sourceTree = "<group>"; };
 		9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OpenClosedPrinciple.cpp; path = SOLID/OpenClosedPrinciple.cpp; sourceTree = "<group>"; };
 		9E0D36C2227ED6A000286300 /* OpenClosedPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = OpenClosedPrinciple.hpp; path = SOLID/OpenClosedPrinciple.hpp; sourceTree = "<group>"; };
+		9E397259229F265B001436A7 /* Singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Singleton.cpp; path = Singleton/Singleton.cpp; sourceTree = "<group>"; };
+		9E39725A229F265B001436A7 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Singleton.hpp; path = Singleton/Singleton.hpp; sourceTree = "<group>"; };
+		9E39725C229F2702001436A7 /* singletondbsample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = singletondbsample.txt; path = Singleton/singletondbsample.txt; sourceTree = "<group>"; };
 		9E6285402283740E003C7D96 /* Builder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Builder.cpp; sourceTree = "<group>"; };
 		9E6285412283740E003C7D96 /* Builder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Builder.hpp; sourceTree = "<group>"; };
 		9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = InterfaceSegregationPrinciple.cpp; path = SOLID/InterfaceSegregationPrinciple.cpp; sourceTree = "<group>"; };
@@ -82,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E397258229F261B001436A7 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				9E397259229F265B001436A7 /* Singleton.cpp */,
+				9E39725A229F265B001436A7 /* Singleton.hpp */,
+				9E39725C229F2702001436A7 /* singletondbsample.txt */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 		9E62853F228373F0003C7D96 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +157,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9E397258229F261B001436A7 /* Singleton */,
 				9E99C52C22973CF400AC60AE /* Prototype */,
 				9ECC618C2288B80D00E2CB15 /* Factory */,
 				9E62853F228373F0003C7D96 /* Builder */,
@@ -234,6 +249,7 @@
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
 				9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */,
+				9E39725B229F265B001436A7 /* Singleton.cpp in Sources */,
 				9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */,
 				9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */,
 				9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */,
