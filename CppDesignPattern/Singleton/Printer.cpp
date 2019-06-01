@@ -7,6 +7,9 @@
 //
 
 #include "Printer.hpp"
+#include <string>
+#include <iostream>
+using namespace std;
 
 class Printer
 {
@@ -15,13 +18,14 @@ public:
     int GetId() const { return id; }
     void SetId(int value) { id = value; }
 };
-
+int Printer::id = 0;
 
 void PrinterMain()
 {
     Printer p;
     int id = p.GetId();
     
+    cout << id << endl;
     
     
 }
