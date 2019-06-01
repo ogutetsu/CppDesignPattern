@@ -14,6 +14,7 @@
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
 		9E7BCCD222A32E30008BC30F /* Printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BCCD022A32E30008BC30F /* Printer.cpp */; };
+		9E7BCCD522A32F4D008BC30F /* Multiton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BCCD322A32F4D008BC30F /* Multiton.cpp */; };
 		9E99C52F22973D3800AC60AE /* Prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E99C52D22973D3800AC60AE /* Prototype.cpp */; };
 		9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */; };
 		9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */; };
@@ -53,6 +54,8 @@
 		9E634D122281BD640096C463 /* DependencyInversionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DependencyInversionPrinciple.hpp; path = SOLID/DependencyInversionPrinciple.hpp; sourceTree = "<group>"; };
 		9E7BCCD022A32E30008BC30F /* Printer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Printer.cpp; path = Singleton/Printer.cpp; sourceTree = "<group>"; };
 		9E7BCCD122A32E30008BC30F /* Printer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Printer.hpp; path = Singleton/Printer.hpp; sourceTree = "<group>"; };
+		9E7BCCD322A32F4D008BC30F /* Multiton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Multiton.cpp; path = Singleton/Multiton.cpp; sourceTree = "<group>"; };
+		9E7BCCD422A32F4D008BC30F /* Multiton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Multiton.hpp; path = Singleton/Multiton.hpp; sourceTree = "<group>"; };
 		9E99C52D22973D3800AC60AE /* Prototype.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Prototype.cpp; path = Prototype/Prototype.cpp; sourceTree = "<group>"; };
 		9E99C52E22973D3800AC60AE /* Prototype.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Prototype.hpp; path = Prototype/Prototype.hpp; sourceTree = "<group>"; };
 		9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AbstractFactory.cpp; path = Factory/AbstractFactory.cpp; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				9E39725C229F2702001436A7 /* singletondbsample.txt */,
 				9E7BCCD022A32E30008BC30F /* Printer.cpp */,
 				9E7BCCD122A32E30008BC30F /* Printer.hpp */,
+				9E7BCCD322A32F4D008BC30F /* Multiton.cpp */,
+				9E7BCCD422A32F4D008BC30F /* Multiton.hpp */,
 			);
 			name = Singleton;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */,
 				9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */,
 				9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */,
+				9E7BCCD522A32F4D008BC30F /* Multiton.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
