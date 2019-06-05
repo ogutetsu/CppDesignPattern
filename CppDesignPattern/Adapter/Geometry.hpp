@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <vector>
+#include <functional>
 
 using namespace std;
 
@@ -18,11 +19,26 @@ using namespace std;
 struct Point
 {
     int x, y;
+    
+    friend size_t HashValue(const Point& p)
+    {
+        size_t value;
+        value = hash<size_t>()(p.x+p.y);
+        return value;
+    }
+    
 };
 
 struct Line
 {
     Point start, end;
+    
+    friend size_t HashValue(const Line& line)
+    {
+        size_t value;
+        value = hash<size_t>()(HashValue(line.start)+HashValue(line.end));
+        return value;
+    }
 };
 
 struct VectorObject
