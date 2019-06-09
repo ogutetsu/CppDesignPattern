@@ -18,6 +18,8 @@
 		9E7BCCD522A32F4D008BC30F /* Multiton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BCCD322A32F4D008BC30F /* Multiton.cpp */; };
 		9E99C52F22973D3800AC60AE /* Prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E99C52D22973D3800AC60AE /* Prototype.cpp */; };
 		9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */; };
+		9EA7416E22A9D3FD00678B69 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7416D22A9D3FD00678B69 /* Person.cpp */; };
+		9EA7417122A9D6A100678B69 /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7416F22A9D6A100678B69 /* Bridge.cpp */; };
 		9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */; };
 		9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */; };
 		9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC6180228817BD00E2CB15 /* Person.cpp */; };
@@ -67,6 +69,10 @@
 		9EA5CF6B2291F60900B06B5D /* HotDrinkFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HotDrinkFactory.hpp; path = Factory/HotDrinkFactory.hpp; sourceTree = "<group>"; };
 		9EA5CF6E2291F62C00B06B5D /* HotDrink.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HotDrink.hpp; path = Factory/HotDrink.hpp; sourceTree = "<group>"; };
 		9EA5CF712291F84800B06B5D /* DrinkFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DrinkFactory.hpp; path = Factory/DrinkFactory.hpp; sourceTree = "<group>"; };
+		9EA7416B22A9D33900678B69 /* Person.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Person.hpp; path = Bridge/Person.hpp; sourceTree = "<group>"; };
+		9EA7416D22A9D3FD00678B69 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Person.cpp; path = Bridge/Person.cpp; sourceTree = "<group>"; };
+		9EA7416F22A9D6A100678B69 /* Bridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bridge.cpp; path = Bridge/Bridge.cpp; sourceTree = "<group>"; };
+		9EA7417022A9D6A100678B69 /* Bridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Bridge.hpp; path = Bridge/Bridge.hpp; sourceTree = "<group>"; };
 		9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GroovyStyle.cpp; sourceTree = "<group>"; };
 		9ECC617B22880ED400E2CB15 /* GroovyStyle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GroovyStyle.hpp; sourceTree = "<group>"; };
 		9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BuilderFactets.cpp; sourceTree = "<group>"; };
@@ -148,6 +154,17 @@
 			name = Prototype;
 			sourceTree = "<group>";
 		};
+		9EA7416922A9D31000678B69 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				9EA7416B22A9D33900678B69 /* Person.hpp */,
+				9EA7416D22A9D3FD00678B69 /* Person.cpp */,
+				9EA7416F22A9D6A100678B69 /* Bridge.cpp */,
+				9EA7417022A9D6A100678B69 /* Bridge.hpp */,
+			);
+			name = Bridge;
+			sourceTree = "<group>";
+		};
 		9ECC618C2288B80D00E2CB15 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +198,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9EA7416922A9D31000678B69 /* Bridge */,
 				9E79612A22A7110400A136CA /* Adapter */,
 				9E397258229F261B001436A7 /* Singleton */,
 				9E99C52C22973CF400AC60AE /* Prototype */,
@@ -269,12 +287,14 @@
 				9E6285422283740E003C7D96 /* Builder.cpp in Sources */,
 				9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */,
 				9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */,
+				9EA7417122A9D6A100678B69 /* Bridge.cpp in Sources */,
 				9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */,
 				9E99C52F22973D3800AC60AE /* Prototype.cpp in Sources */,
 				9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */,
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
 				9E79613022A7132A00A136CA /* Adapter.cpp in Sources */,
+				9EA7416E22A9D3FD00678B69 /* Person.cpp in Sources */,
 				9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */,
 				9E39725B229F265B001436A7 /* Singleton.cpp in Sources */,
 				9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */,
