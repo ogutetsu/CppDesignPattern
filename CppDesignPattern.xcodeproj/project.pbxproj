@@ -11,6 +11,7 @@
 		9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */; };
 		9E39725B229F265B001436A7 /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E397259229F265B001436A7 /* Singleton.cpp */; };
 		9E608BD622ADA4990013D7A2 /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BD422ADA4990013D7A2 /* Composite.cpp */; };
+		9E608BD922AE9E010013D7A2 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BD722AE9E010013D7A2 /* NeuralNetwork.cpp */; };
 		9E6285422283740E003C7D96 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285402283740E003C7D96 /* Builder.cpp */; };
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
@@ -52,6 +53,8 @@
 		9E39725C229F2702001436A7 /* singletondbsample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = singletondbsample.txt; path = Singleton/singletondbsample.txt; sourceTree = "<group>"; };
 		9E608BD422ADA4990013D7A2 /* Composite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Composite.cpp; path = Composite/Composite.cpp; sourceTree = "<group>"; };
 		9E608BD522ADA4990013D7A2 /* Composite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Composite.hpp; path = Composite/Composite.hpp; sourceTree = "<group>"; };
+		9E608BD722AE9E010013D7A2 /* NeuralNetwork.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = NeuralNetwork.cpp; path = Composite/NeuralNetwork.cpp; sourceTree = "<group>"; };
+		9E608BD822AE9E010013D7A2 /* NeuralNetwork.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = NeuralNetwork.hpp; path = Composite/NeuralNetwork.hpp; sourceTree = "<group>"; };
 		9E6285402283740E003C7D96 /* Builder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Builder.cpp; sourceTree = "<group>"; };
 		9E6285412283740E003C7D96 /* Builder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Builder.hpp; sourceTree = "<group>"; };
 		9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = InterfaceSegregationPrinciple.cpp; path = SOLID/InterfaceSegregationPrinciple.cpp; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 			children = (
 				9E608BD422ADA4990013D7A2 /* Composite.cpp */,
 				9E608BD522ADA4990013D7A2 /* Composite.hpp */,
+				9E608BD722AE9E010013D7A2 /* NeuralNetwork.cpp */,
+				9E608BD822AE9E010013D7A2 /* NeuralNetwork.hpp */,
 			);
 			name = Composite;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				9E7BCCD222A32E30008BC30F /* Printer.cpp in Sources */,
 				9E6285422283740E003C7D96 /* Builder.cpp in Sources */,
 				9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */,
+				9E608BD922AE9E010013D7A2 /* NeuralNetwork.cpp in Sources */,
 				9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */,
 				9EA7417122A9D6A100678B69 /* Bridge.cpp in Sources */,
 				9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */,
