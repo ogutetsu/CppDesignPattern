@@ -14,6 +14,7 @@
 		9E608BD922AE9E010013D7A2 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BD722AE9E010013D7A2 /* NeuralNetwork.cpp */; };
 		9E608BDC22B2821F0013D7A2 /* ArrayBacked.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BDA22B2821F0013D7A2 /* ArrayBacked.cpp */; };
 		9E608BE022C41E7F0013D7A2 /* Decorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BDE22C41E7F0013D7A2 /* Decorator.cpp */; };
+		9E608BE322C72D880013D7A2 /* FunctionalDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BE122C72D880013D7A2 /* FunctionalDecorator.cpp */; };
 		9E6285422283740E003C7D96 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285402283740E003C7D96 /* Builder.cpp */; };
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
@@ -61,6 +62,8 @@
 		9E608BDB22B2821F0013D7A2 /* ArrayBacked.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ArrayBacked.hpp; path = Composite/ArrayBacked.hpp; sourceTree = "<group>"; };
 		9E608BDE22C41E7F0013D7A2 /* Decorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Decorator.cpp; path = Decorator/Decorator.cpp; sourceTree = "<group>"; };
 		9E608BDF22C41E7F0013D7A2 /* Decorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Decorator.hpp; path = Decorator/Decorator.hpp; sourceTree = "<group>"; };
+		9E608BE122C72D880013D7A2 /* FunctionalDecorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FunctionalDecorator.cpp; path = Decorator/FunctionalDecorator.cpp; sourceTree = "<group>"; };
+		9E608BE222C72D880013D7A2 /* FunctionalDecorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = FunctionalDecorator.hpp; path = Decorator/FunctionalDecorator.hpp; sourceTree = "<group>"; };
 		9E6285402283740E003C7D96 /* Builder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Builder.cpp; sourceTree = "<group>"; };
 		9E6285412283740E003C7D96 /* Builder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Builder.hpp; sourceTree = "<group>"; };
 		9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = InterfaceSegregationPrinciple.cpp; path = SOLID/InterfaceSegregationPrinciple.cpp; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				9E608BDE22C41E7F0013D7A2 /* Decorator.cpp */,
+				9E608BE122C72D880013D7A2 /* FunctionalDecorator.cpp */,
+				9E608BE222C72D880013D7A2 /* FunctionalDecorator.hpp */,
 				9E608BDF22C41E7F0013D7A2 /* Decorator.hpp */,
 			);
 			name = Decorator;
@@ -342,6 +347,7 @@
 				9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */,
 				9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */,
 				9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */,
+				9E608BE322C72D880013D7A2 /* FunctionalDecorator.cpp in Sources */,
 				9E7BCCD522A32F4D008BC30F /* Multiton.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
