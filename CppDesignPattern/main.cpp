@@ -15,10 +15,19 @@ extern void BuilderMain();
 extern void GroovyStyleMain();
 extern void BuilderFactetsMain();
 extern void FactoryMain();
+extern void AbstructFactoryMain();
+extern void PrototypeMain();
+extern void SingletonMain();
+extern void MultitonMain();
+extern void BridgeMain();
+extern void CompositeMain();
+extern void NeuronMain();
+extern void ArrayBackedMain();
+extern void DecoratorMain();
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    FactoryMain();
+    DecoratorMain();
     return 0;
 }
 
