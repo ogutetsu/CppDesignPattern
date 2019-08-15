@@ -18,6 +18,7 @@
 		9E6285422283740E003C7D96 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285402283740E003C7D96 /* Builder.cpp */; };
 		9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D0E2281B4F70096C463 /* InterfaceSegregationPrinciple.cpp */; };
 		9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */; };
+		9E714A7F2306258400B3B9C5 /* Facade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E714A7E2306258400B3B9C5 /* Facade.cpp */; };
 		9E79613022A7132A00A136CA /* Adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E79612E22A7132A00A136CA /* Adapter.cpp */; };
 		9E7BCCD222A32E30008BC30F /* Printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BCCD022A32E30008BC30F /* Printer.cpp */; };
 		9E7BCCD522A32F4D008BC30F /* Multiton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BCCD322A32F4D008BC30F /* Multiton.cpp */; };
@@ -70,6 +71,8 @@
 		9E634D0F2281B4F70096C463 /* InterfaceSegregationPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = InterfaceSegregationPrinciple.hpp; path = SOLID/InterfaceSegregationPrinciple.hpp; sourceTree = "<group>"; };
 		9E634D112281BD640096C463 /* DependencyInversionPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DependencyInversionPrinciple.cpp; path = SOLID/DependencyInversionPrinciple.cpp; sourceTree = "<group>"; };
 		9E634D122281BD640096C463 /* DependencyInversionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DependencyInversionPrinciple.hpp; path = SOLID/DependencyInversionPrinciple.hpp; sourceTree = "<group>"; };
+		9E714A7D2306233100B3B9C5 /* Facade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Facade.h; path = Facade/Facade.h; sourceTree = "<group>"; };
+		9E714A7E2306258400B3B9C5 /* Facade.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Facade.cpp; path = Facade/Facade.cpp; sourceTree = "<group>"; };
 		9E79612C22A7112700A136CA /* Geometry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Geometry.hpp; path = Adapter/Geometry.hpp; sourceTree = "<group>"; };
 		9E79612E22A7132A00A136CA /* Adapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Adapter.cpp; path = Adapter/Adapter.cpp; sourceTree = "<group>"; };
 		9E79612F22A7132A00A136CA /* Adapter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Adapter.hpp; path = Adapter/Adapter.hpp; sourceTree = "<group>"; };
@@ -174,6 +177,15 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		9E714A7C2306225D00B3B9C5 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				9E714A7D2306233100B3B9C5 /* Facade.h */,
+				9E714A7E2306258400B3B9C5 /* Facade.cpp */,
+			);
+			name = Facade;
+			sourceTree = "<group>";
+		};
 		9E79612A22A7110400A136CA /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +249,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9E714A7C2306225D00B3B9C5 /* Facade */,
 				9E608BDD22C41E520013D7A2 /* Decorator */,
 				9E608BD322ADA44E0013D7A2 /* Composite */,
 				9EA7416922A9D31000678B69 /* Bridge */,
@@ -333,6 +346,7 @@
 				9EA7417122A9D6A100678B69 /* Bridge.cpp in Sources */,
 				9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */,
 				9E99C52F22973D3800AC60AE /* Prototype.cpp in Sources */,
+				9E714A7F2306258400B3B9C5 /* Facade.cpp in Sources */,
 				9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */,
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
