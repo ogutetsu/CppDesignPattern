@@ -26,6 +26,7 @@
 		9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5CF672291F4C400B06B5D /* AbstractFactory.cpp */; };
 		9EA7416E22A9D3FD00678B69 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7416D22A9D3FD00678B69 /* Person.cpp */; };
 		9EA7417122A9D6A100678B69 /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7416F22A9D6A100678B69 /* Bridge.cpp */; };
+		9EC2137E230A1AD60099CC89 /* Flyweight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EC2137C230A1AD60099CC89 /* Flyweight.cpp */; };
 		9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */; };
 		9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */; };
 		9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC6180228817BD00E2CB15 /* Person.cpp */; };
@@ -91,6 +92,8 @@
 		9EA7416D22A9D3FD00678B69 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Person.cpp; path = Bridge/Person.cpp; sourceTree = "<group>"; };
 		9EA7416F22A9D6A100678B69 /* Bridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bridge.cpp; path = Bridge/Bridge.cpp; sourceTree = "<group>"; };
 		9EA7417022A9D6A100678B69 /* Bridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Bridge.hpp; path = Bridge/Bridge.hpp; sourceTree = "<group>"; };
+		9EC2137C230A1AD60099CC89 /* Flyweight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Flyweight.cpp; path = Flyweight/Flyweight.cpp; sourceTree = "<group>"; };
+		9EC2137D230A1AD60099CC89 /* Flyweight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Flyweight.hpp; path = Flyweight/Flyweight.hpp; sourceTree = "<group>"; };
 		9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GroovyStyle.cpp; sourceTree = "<group>"; };
 		9ECC617B22880ED400E2CB15 /* GroovyStyle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GroovyStyle.hpp; sourceTree = "<group>"; };
 		9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BuilderFactets.cpp; sourceTree = "<group>"; };
@@ -216,6 +219,15 @@
 			name = Bridge;
 			sourceTree = "<group>";
 		};
+		9EC2137B230A1A980099CC89 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				9EC2137C230A1AD60099CC89 /* Flyweight.cpp */,
+				9EC2137D230A1AD60099CC89 /* Flyweight.hpp */,
+			);
+			name = Flyweight;
+			sourceTree = "<group>";
+		};
 		9ECC618C2288B80D00E2CB15 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +261,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9EC2137B230A1A980099CC89 /* Flyweight */,
 				9E714A7C2306225D00B3B9C5 /* Facade */,
 				9E608BDD22C41E520013D7A2 /* Decorator */,
 				9E608BD322ADA44E0013D7A2 /* Composite */,
@@ -340,6 +353,7 @@
 				9E7BCCD222A32E30008BC30F /* Printer.cpp in Sources */,
 				9E6285422283740E003C7D96 /* Builder.cpp in Sources */,
 				9E608BDC22B2821F0013D7A2 /* ArrayBacked.cpp in Sources */,
+				9EC2137E230A1AD60099CC89 /* Flyweight.cpp in Sources */,
 				9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */,
 				9E608BD922AE9E010013D7A2 /* NeuralNetwork.cpp in Sources */,
 				9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */,
