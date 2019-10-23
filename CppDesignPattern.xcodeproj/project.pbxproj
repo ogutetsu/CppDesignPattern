@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0C04A12280D64D00694419 /* LiskovSubstitutionPrinciple.cpp */; };
 		9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */; };
+		9E278F68236115CE009D475C /* FormattedText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E278F66236115CE009D475C /* FormattedText.cpp */; };
 		9E39725B229F265B001436A7 /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E397259229F265B001436A7 /* Singleton.cpp */; };
 		9E608BD622ADA4990013D7A2 /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BD422ADA4990013D7A2 /* Composite.cpp */; };
 		9E608BD922AE9E010013D7A2 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BD722AE9E010013D7A2 /* NeuralNetwork.cpp */; };
@@ -53,6 +54,8 @@
 		9E0C04A22280D64D00694419 /* LiskovSubstitutionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = LiskovSubstitutionPrinciple.hpp; path = SOLID/LiskovSubstitutionPrinciple.hpp; sourceTree = "<group>"; };
 		9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OpenClosedPrinciple.cpp; path = SOLID/OpenClosedPrinciple.cpp; sourceTree = "<group>"; };
 		9E0D36C2227ED6A000286300 /* OpenClosedPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = OpenClosedPrinciple.hpp; path = SOLID/OpenClosedPrinciple.hpp; sourceTree = "<group>"; };
+		9E278F66236115CE009D475C /* FormattedText.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FormattedText.cpp; path = Flyweight/FormattedText.cpp; sourceTree = "<group>"; };
+		9E278F67236115CE009D475C /* FormattedText.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = FormattedText.hpp; path = Flyweight/FormattedText.hpp; sourceTree = "<group>"; };
 		9E397259229F265B001436A7 /* Singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Singleton.cpp; path = Singleton/Singleton.cpp; sourceTree = "<group>"; };
 		9E39725A229F265B001436A7 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Singleton.hpp; path = Singleton/Singleton.hpp; sourceTree = "<group>"; };
 		9E39725C229F2702001436A7 /* singletondbsample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = singletondbsample.txt; path = Singleton/singletondbsample.txt; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 			children = (
 				9EC2137C230A1AD60099CC89 /* Flyweight.cpp */,
 				9EC2137D230A1AD60099CC89 /* Flyweight.hpp */,
+				9E278F66236115CE009D475C /* FormattedText.cpp */,
+				9E278F67236115CE009D475C /* FormattedText.hpp */,
 			);
 			name = Flyweight;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				9E39725B229F265B001436A7 /* Singleton.cpp in Sources */,
 				9E608BE022C41E7F0013D7A2 /* Decorator.cpp in Sources */,
 				9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */,
+				9E278F68236115CE009D475C /* FormattedText.cpp in Sources */,
 				9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */,
 				9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */,
 				9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */,
