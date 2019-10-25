@@ -28,6 +28,9 @@
 		9EA7416E22A9D3FD00678B69 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7416D22A9D3FD00678B69 /* Person.cpp */; };
 		9EA7417122A9D6A100678B69 /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7416F22A9D6A100678B69 /* Bridge.cpp */; };
 		9EC2137E230A1AD60099CC89 /* Flyweight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EC2137C230A1AD60099CC89 /* Flyweight.cpp */; };
+		9EC4F7F4236268B400C5C52F /* PropertyProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4F7F2236268B400C5C52F /* PropertyProxy.cpp */; };
+		9EC4F7F723626B8900C5C52F /* VirtualProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4F7F523626B8900C5C52F /* VirtualProxy.cpp */; };
+		9EC4F7FA23626F3500C5C52F /* CommunictionProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4F7F823626F3500C5C52F /* CommunictionProxy.cpp */; };
 		9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */; };
 		9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */; };
 		9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC6180228817BD00E2CB15 /* Person.cpp */; };
@@ -97,6 +100,12 @@
 		9EA7417022A9D6A100678B69 /* Bridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Bridge.hpp; path = Bridge/Bridge.hpp; sourceTree = "<group>"; };
 		9EC2137C230A1AD60099CC89 /* Flyweight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Flyweight.cpp; path = Flyweight/Flyweight.cpp; sourceTree = "<group>"; };
 		9EC2137D230A1AD60099CC89 /* Flyweight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Flyweight.hpp; path = Flyweight/Flyweight.hpp; sourceTree = "<group>"; };
+		9EC4F7F2236268B400C5C52F /* PropertyProxy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PropertyProxy.cpp; path = Proxy/PropertyProxy.cpp; sourceTree = "<group>"; };
+		9EC4F7F3236268B400C5C52F /* PropertyProxy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = PropertyProxy.hpp; path = Proxy/PropertyProxy.hpp; sourceTree = "<group>"; };
+		9EC4F7F523626B8900C5C52F /* VirtualProxy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = VirtualProxy.cpp; path = Proxy/VirtualProxy.cpp; sourceTree = "<group>"; };
+		9EC4F7F623626B8900C5C52F /* VirtualProxy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = VirtualProxy.hpp; path = Proxy/VirtualProxy.hpp; sourceTree = "<group>"; };
+		9EC4F7F823626F3500C5C52F /* CommunictionProxy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CommunictionProxy.cpp; path = Proxy/CommunictionProxy.cpp; sourceTree = "<group>"; };
+		9EC4F7F923626F3500C5C52F /* CommunictionProxy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CommunictionProxy.hpp; path = Proxy/CommunictionProxy.hpp; sourceTree = "<group>"; };
 		9ECC617A22880ED400E2CB15 /* GroovyStyle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GroovyStyle.cpp; sourceTree = "<group>"; };
 		9ECC617B22880ED400E2CB15 /* GroovyStyle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GroovyStyle.hpp; sourceTree = "<group>"; };
 		9ECC617D228815E200E2CB15 /* BuilderFactets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BuilderFactets.cpp; sourceTree = "<group>"; };
@@ -233,6 +242,19 @@
 			name = Flyweight;
 			sourceTree = "<group>";
 		};
+		9EC4F7F12362687000C5C52F /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				9EC4F7F2236268B400C5C52F /* PropertyProxy.cpp */,
+				9EC4F7F3236268B400C5C52F /* PropertyProxy.hpp */,
+				9EC4F7F523626B8900C5C52F /* VirtualProxy.cpp */,
+				9EC4F7F623626B8900C5C52F /* VirtualProxy.hpp */,
+				9EC4F7F823626F3500C5C52F /* CommunictionProxy.cpp */,
+				9EC4F7F923626F3500C5C52F /* CommunictionProxy.hpp */,
+			);
+			name = Proxy;
+			sourceTree = "<group>";
+		};
 		9ECC618C2288B80D00E2CB15 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +288,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9EC4F7F12362687000C5C52F /* Proxy */,
 				9EC2137B230A1A980099CC89 /* Flyweight */,
 				9E714A7C2306225D00B3B9C5 /* Facade */,
 				9E608BDD22C41E520013D7A2 /* Decorator */,
@@ -367,6 +390,7 @@
 				9E99C52F22973D3800AC60AE /* Prototype.cpp in Sources */,
 				9E714A7F2306258400B3B9C5 /* Facade.cpp in Sources */,
 				9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */,
+				9EC4F7F723626B8900C5C52F /* VirtualProxy.cpp in Sources */,
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
 				9E608BD622ADA4990013D7A2 /* Composite.cpp in Sources */,
@@ -374,6 +398,7 @@
 				9EA7416E22A9D3FD00678B69 /* Person.cpp in Sources */,
 				9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */,
 				9E39725B229F265B001436A7 /* Singleton.cpp in Sources */,
+				9EC4F7F4236268B400C5C52F /* PropertyProxy.cpp in Sources */,
 				9E608BE022C41E7F0013D7A2 /* Decorator.cpp in Sources */,
 				9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */,
 				9E278F68236115CE009D475C /* FormattedText.cpp in Sources */,
@@ -383,6 +408,7 @@
 				9ECC617C22880ED400E2CB15 /* GroovyStyle.cpp in Sources */,
 				9E608BE322C72D880013D7A2 /* FunctionalDecorator.cpp in Sources */,
 				9E7BCCD522A32F4D008BC30F /* Multiton.cpp in Sources */,
+				9EC4F7FA23626F3500C5C52F /* CommunictionProxy.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
