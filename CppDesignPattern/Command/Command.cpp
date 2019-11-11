@@ -90,30 +90,78 @@ struct BankAccountCommand : Command
     }
 };
 
+struct CompositeBankAccountCommand : vector<BankAccountCommand>, Command
+{
+    CompositeBankAccountCommand(const initializer_list<BankAccountCommand>& items) : vector(items) {}
+    
+    void call() override
+    {
+        for(auto& cmd : *this)
+           {
+               cmd.call();
+           }
+    }
+    
+    void undo() override
+    {
+        for(auto it = rbegin(); it != rend(); it++)
+        {
+            it->undo();
+        }
+    }
+    
+};
 
+struct DependentCompositeCommand : CompositeBankAccountCommand
+{
+    DependentCompositeCommand(const initializer_list<BankAccountCommand>& items): CompositeBankAccountCommand(items)
+    {}
+    
+    void call() override
+    {
+        bool ok = true;
+        for(auto& cmd : *this)
+        {
+            if(ok)
+            {
+                cmd.call();
+                ok = cmd.succeeded;
+            }
+            else
+            {
+                cmd.succeeded = false;
+            }
+        }
+    }
+    
+};
+
+struct MoneyTransferCommand : DependentCompositeCommand
+{
+    MoneyTransferCommand(BankAccount& from, BankAccount& to, int amount) :
+        DependentCompositeCommand(
+            {
+                BankAccountCommand{from, BankAccountCommand::withdraw, amount},
+                BankAccountCommand{to, BankAccountCommand::deposit, amount}
+            }
+        )
+    {}
+};
+    
 
 void CommandMain()
 {
-    BankAccount ba;
-    vector<BankAccountCommand> commands
-    {
-        BankAccountCommand{ba, BankAccountCommand::deposit, 100},
-        BankAccountCommand{ba, BankAccountCommand::withdraw, 200}
-    };
+    BankAccount ba, ba2;
     
-    cout << ba << endl;
+    ba.deposit(100);
     
-    for(auto& cmd : commands)
-    {
-        cmd.call();
-    }
+    MoneyTransferCommand cmd {ba, ba2, 5000};
+    cmd.call();
     
-    for(auto it = commands.rbegin(); it != commands.rend(); it++)
-    {
-        it->undo();
-    }
+    cout << ba << endl << ba2 << endl;
     
-    cout << ba << endl;
+    cmd.undo();
+    cout << ba << endl << ba2 << endl;
     
 }
 
