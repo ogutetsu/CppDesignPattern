@@ -24,13 +24,15 @@ struct BankAccount
         cout << "deposited " << amount << ", balance is now " << balance << endl;
     }
     
-    void withdraw(int amount)
+    bool withdraw(int amount)
     {
         if(balance - amount >= overdraft_limit)
         {
             balance -= amount;
             cout << "withdraw " << amount << ", balance is now " << balance << endl;
+            return true;
         }
+        return false;
     }
     
     friend ostream& operator <<(ostream& os, const BankAccount& account)
@@ -42,7 +44,9 @@ struct BankAccount
 
 struct Command
 {
+    bool succeeded;
     virtual void call() = 0;
+    virtual void undo() = 0;
 };
 
 struct BankAccountCommand : Command
@@ -52,7 +56,10 @@ struct BankAccountCommand : Command
     int amount;
     
     BankAccountCommand(BankAccount& account, Action action, int amount) :
-    account(account), action(action), amount(amount) {}
+    account(account), action(action), amount(amount)
+    {
+        succeeded = false;
+    }
     
     void call() override
     {
@@ -60,9 +67,24 @@ struct BankAccountCommand : Command
         {
             case deposit:
                 account.deposit(amount);
+                succeeded = true;
                 break;
             case withdraw:
+                succeeded = account.withdraw(amount);
+                break;
+        }
+    }
+    
+    void undo() override
+    {
+        if(!succeeded) return;
+        
+        switch (action) {
+            case deposit:
                 account.withdraw(amount);
+                break;
+            case withdraw:
+                account.deposit(amount);
                 break;
         }
     }
@@ -86,6 +108,10 @@ void CommandMain()
         cmd.call();
     }
     
+    for(auto it = commands.rbegin(); it != commands.rend(); it++)
+    {
+        it->undo();
+    }
     
     cout << ba << endl;
     
