@@ -11,6 +11,8 @@
 		9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */; };
 		9E278F68236115CE009D475C /* FormattedText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E278F66236115CE009D475C /* FormattedText.cpp */; };
 		9E39725B229F265B001436A7 /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E397259229F265B001436A7 /* Singleton.cpp */; };
+		9E4558632367ACF20092D1F7 /* PointerChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E4558612367ACF20092D1F7 /* PointerChain.cpp */; };
+		9E4558662367B1D40092D1F7 /* BrokerChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E4558642367B1D40092D1F7 /* BrokerChain.cpp */; };
 		9E608BD622ADA4990013D7A2 /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BD422ADA4990013D7A2 /* Composite.cpp */; };
 		9E608BD922AE9E010013D7A2 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BD722AE9E010013D7A2 /* NeuralNetwork.cpp */; };
 		9E608BDC22B2821F0013D7A2 /* ArrayBacked.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E608BDA22B2821F0013D7A2 /* ArrayBacked.cpp */; };
@@ -36,6 +38,7 @@
 		9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC6180228817BD00E2CB15 /* Person.cpp */; };
 		9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC61832288180D00E2CB15 /* PersonBuilder.cpp */; };
 		9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC618D2288B83900E2CB15 /* Factory.cpp */; };
+		9ED0C06C237A224800C3D1BB /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0C06A237A224800C3D1BB /* Command.cpp */; };
 		9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEAB322799ECD006C7DB1 /* main.cpp */; };
 		9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,10 @@
 		9E397259229F265B001436A7 /* Singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Singleton.cpp; path = Singleton/Singleton.cpp; sourceTree = "<group>"; };
 		9E39725A229F265B001436A7 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Singleton.hpp; path = Singleton/Singleton.hpp; sourceTree = "<group>"; };
 		9E39725C229F2702001436A7 /* singletondbsample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = singletondbsample.txt; path = Singleton/singletondbsample.txt; sourceTree = "<group>"; };
+		9E4558612367ACF20092D1F7 /* PointerChain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PointerChain.cpp; path = Responsibility/PointerChain.cpp; sourceTree = "<group>"; };
+		9E4558622367ACF20092D1F7 /* PointerChain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = PointerChain.hpp; path = Responsibility/PointerChain.hpp; sourceTree = "<group>"; };
+		9E4558642367B1D40092D1F7 /* BrokerChain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BrokerChain.cpp; path = Responsibility/BrokerChain.cpp; sourceTree = "<group>"; };
+		9E4558652367B1D40092D1F7 /* BrokerChain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BrokerChain.hpp; path = Responsibility/BrokerChain.hpp; sourceTree = "<group>"; };
 		9E608BD422ADA4990013D7A2 /* Composite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Composite.cpp; path = Composite/Composite.cpp; sourceTree = "<group>"; };
 		9E608BD522ADA4990013D7A2 /* Composite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Composite.hpp; path = Composite/Composite.hpp; sourceTree = "<group>"; };
 		9E608BD722AE9E010013D7A2 /* NeuralNetwork.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = NeuralNetwork.cpp; path = Composite/NeuralNetwork.cpp; sourceTree = "<group>"; };
@@ -118,6 +125,8 @@
 		9ECC618A22881BE200E2CB15 /* PersonJobBuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PersonJobBuilder.hpp; sourceTree = "<group>"; };
 		9ECC618D2288B83900E2CB15 /* Factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Factory.cpp; path = Factory/Factory.cpp; sourceTree = "<group>"; };
 		9ECC618E2288B83900E2CB15 /* Factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Factory.hpp; path = Factory/Factory.hpp; sourceTree = "<group>"; };
+		9ED0C06A237A224800C3D1BB /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Command.cpp; path = Command/Command.cpp; sourceTree = "<group>"; };
+		9ED0C06B237A224800C3D1BB /* Command.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Command.hpp; path = Command/Command.hpp; sourceTree = "<group>"; };
 		9EFAEAB022799ECD006C7DB1 /* CppDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFAEAB322799ECD006C7DB1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SingleResponsibilityPrinciple.cpp; path = SOLID/SingleResponsibilityPrinciple.cpp; sourceTree = "<group>"; };
@@ -147,6 +156,17 @@
 				9E7BCCD422A32F4D008BC30F /* Multiton.hpp */,
 			);
 			name = Singleton;
+			sourceTree = "<group>";
+		};
+		9E4558602367AC920092D1F7 /* Responsibility */ = {
+			isa = PBXGroup;
+			children = (
+				9E4558612367ACF20092D1F7 /* PointerChain.cpp */,
+				9E4558622367ACF20092D1F7 /* PointerChain.hpp */,
+				9E4558642367B1D40092D1F7 /* BrokerChain.cpp */,
+				9E4558652367B1D40092D1F7 /* BrokerChain.hpp */,
+			);
+			name = Responsibility;
 			sourceTree = "<group>";
 		};
 		9E608BD322ADA44E0013D7A2 /* Composite */ = {
@@ -269,6 +289,15 @@
 			name = Factory;
 			sourceTree = "<group>";
 		};
+		9ED0C069237A221800C3D1BB /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				9ED0C06A237A224800C3D1BB /* Command.cpp */,
+				9ED0C06B237A224800C3D1BB /* Command.hpp */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
 		9EFAEAA722799ECD006C7DB1 = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +317,8 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9ED0C069237A221800C3D1BB /* Command */,
+				9E4558602367AC920092D1F7 /* Responsibility */,
 				9EC4F7F12362687000C5C52F /* Proxy */,
 				9EC2137B230A1A980099CC89 /* Flyweight */,
 				9E714A7C2306225D00B3B9C5 /* Facade */,
@@ -381,8 +412,10 @@
 				9E7BCCD222A32E30008BC30F /* Printer.cpp in Sources */,
 				9E6285422283740E003C7D96 /* Builder.cpp in Sources */,
 				9E608BDC22B2821F0013D7A2 /* ArrayBacked.cpp in Sources */,
+				9ED0C06C237A224800C3D1BB /* Command.cpp in Sources */,
 				9EC2137E230A1AD60099CC89 /* Flyweight.cpp in Sources */,
 				9ECC617F228815E200E2CB15 /* BuilderFactets.cpp in Sources */,
+				9E4558632367ACF20092D1F7 /* PointerChain.cpp in Sources */,
 				9E608BD922AE9E010013D7A2 /* NeuralNetwork.cpp in Sources */,
 				9E634D132281BD640096C463 /* DependencyInversionPrinciple.cpp in Sources */,
 				9EA7417122A9D6A100678B69 /* Bridge.cpp in Sources */,
@@ -393,6 +426,7 @@
 				9EC4F7F723626B8900C5C52F /* VirtualProxy.cpp in Sources */,
 				9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */,
 				9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */,
+				9E4558662367B1D40092D1F7 /* BrokerChain.cpp in Sources */,
 				9E608BD622ADA4990013D7A2 /* Composite.cpp in Sources */,
 				9E79613022A7132A00A136CA /* Adapter.cpp in Sources */,
 				9EA7416E22A9D3FD00678B69 /* Person.cpp in Sources */,
