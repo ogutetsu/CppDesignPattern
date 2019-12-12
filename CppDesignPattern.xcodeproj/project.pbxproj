@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0533C223A268FC00AEAF1E /* BinaryTreeIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0533C023A268FC00AEAF1E /* BinaryTreeIterator.cpp */; };
 		9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0C04A12280D64D00694419 /* LiskovSubstitutionPrinciple.cpp */; };
 		9E0D36C3227ED6A000286300 /* OpenClosedPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */; };
 		9E278F68236115CE009D475C /* FormattedText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E278F66236115CE009D475C /* FormattedText.cpp */; };
@@ -57,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9E0533C023A268FC00AEAF1E /* BinaryTreeIterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryTreeIterator.cpp; path = Iterator/BinaryTreeIterator.cpp; sourceTree = "<group>"; };
+		9E0533C123A268FC00AEAF1E /* BinaryTreeIterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinaryTreeIterator.hpp; path = Iterator/BinaryTreeIterator.hpp; sourceTree = "<group>"; };
 		9E0C04A12280D64D00694419 /* LiskovSubstitutionPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LiskovSubstitutionPrinciple.cpp; path = SOLID/LiskovSubstitutionPrinciple.cpp; sourceTree = "<group>"; };
 		9E0C04A22280D64D00694419 /* LiskovSubstitutionPrinciple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = LiskovSubstitutionPrinciple.hpp; path = SOLID/LiskovSubstitutionPrinciple.hpp; sourceTree = "<group>"; };
 		9E0D36C1227ED6A000286300 /* OpenClosedPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OpenClosedPrinciple.cpp; path = SOLID/OpenClosedPrinciple.cpp; sourceTree = "<group>"; };
@@ -147,6 +150,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E0533BF23A2687800AEAF1E /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				9E0533C023A268FC00AEAF1E /* BinaryTreeIterator.cpp */,
+				9E0533C123A268FC00AEAF1E /* BinaryTreeIterator.hpp */,
+			);
+			name = Iterator;
+			sourceTree = "<group>";
+		};
 		9E397258229F261B001436A7 /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +341,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9E0533BF23A2687800AEAF1E /* Iterator */,
 				9E5F17D52387F265002C0213 /* Interpreter */,
 				9ED0C069237A221800C3D1BB /* Command */,
 				9E4558602367AC920092D1F7 /* Responsibility */,
@@ -424,6 +437,7 @@
 			files = (
 				9E7BCCD222A32E30008BC30F /* Printer.cpp in Sources */,
 				9E6285422283740E003C7D96 /* Builder.cpp in Sources */,
+				9E0533C223A268FC00AEAF1E /* BinaryTreeIterator.cpp in Sources */,
 				9E608BDC22B2821F0013D7A2 /* ArrayBacked.cpp in Sources */,
 				9ED0C06C237A224800C3D1BB /* Command.cpp in Sources */,
 				9EC2137E230A1AD60099CC89 /* Flyweight.cpp in Sources */,
