@@ -41,6 +41,9 @@
 		9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC61832288180D00E2CB15 /* PersonBuilder.cpp */; };
 		9ECC618F2288B83900E2CB15 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC618D2288B83900E2CB15 /* Factory.cpp */; };
 		9ED0C06C237A224800C3D1BB /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0C06A237A224800C3D1BB /* Command.cpp */; };
+		9EF58C0B23BFEC9F00D69D50 /* Madiator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EF58C0923BFEC9F00D69D50 /* Madiator.cpp */; };
+		9EF58C0E23BFECC800D69D50 /* MadiatorPerson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EF58C0C23BFECC800D69D50 /* MadiatorPerson.cpp */; };
+		9EF58C1123BFEFFF00D69D50 /* MadiatorChatRoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EF58C0F23BFEFFF00D69D50 /* MadiatorChatRoom.cpp */; };
 		9EFAEAB422799ECD006C7DB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEAB322799ECD006C7DB1 /* main.cpp */; };
 		9EFAEABE2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */; };
 /* End PBXBuildFile section */
@@ -133,6 +136,12 @@
 		9ECC618E2288B83900E2CB15 /* Factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Factory.hpp; path = Factory/Factory.hpp; sourceTree = "<group>"; };
 		9ED0C06A237A224800C3D1BB /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Command.cpp; path = Command/Command.cpp; sourceTree = "<group>"; };
 		9ED0C06B237A224800C3D1BB /* Command.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Command.hpp; path = Command/Command.hpp; sourceTree = "<group>"; };
+		9EF58C0923BFEC9F00D69D50 /* Madiator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Madiator.cpp; path = Madiator/Madiator.cpp; sourceTree = "<group>"; };
+		9EF58C0A23BFEC9F00D69D50 /* Madiator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Madiator.hpp; path = Madiator/Madiator.hpp; sourceTree = "<group>"; };
+		9EF58C0C23BFECC800D69D50 /* MadiatorPerson.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MadiatorPerson.cpp; path = Madiator/MadiatorPerson.cpp; sourceTree = "<group>"; };
+		9EF58C0D23BFECC800D69D50 /* MadiatorPerson.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MadiatorPerson.hpp; path = Madiator/MadiatorPerson.hpp; sourceTree = "<group>"; };
+		9EF58C0F23BFEFFF00D69D50 /* MadiatorChatRoom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MadiatorChatRoom.cpp; path = Madiator/MadiatorChatRoom.cpp; sourceTree = "<group>"; };
+		9EF58C1023BFEFFF00D69D50 /* MadiatorChatRoom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MadiatorChatRoom.hpp; path = Madiator/MadiatorChatRoom.hpp; sourceTree = "<group>"; };
 		9EFAEAB022799ECD006C7DB1 /* CppDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFAEAB322799ECD006C7DB1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9EFAEABC2279A760006C7DB1 /* SingleResponsibilityPrinciple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SingleResponsibilityPrinciple.cpp; path = SOLID/SingleResponsibilityPrinciple.cpp; sourceTree = "<group>"; };
@@ -322,6 +331,19 @@
 			name = Command;
 			sourceTree = "<group>";
 		};
+		9EF58C0823BFEC2900D69D50 /* Madiator */ = {
+			isa = PBXGroup;
+			children = (
+				9EF58C0923BFEC9F00D69D50 /* Madiator.cpp */,
+				9EF58C0A23BFEC9F00D69D50 /* Madiator.hpp */,
+				9EF58C0C23BFECC800D69D50 /* MadiatorPerson.cpp */,
+				9EF58C0D23BFECC800D69D50 /* MadiatorPerson.hpp */,
+				9EF58C0F23BFEFFF00D69D50 /* MadiatorChatRoom.cpp */,
+				9EF58C1023BFEFFF00D69D50 /* MadiatorChatRoom.hpp */,
+			);
+			name = Madiator;
+			sourceTree = "<group>";
+		};
 		9EFAEAA722799ECD006C7DB1 = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +363,7 @@
 		9EFAEAB222799ECD006C7DB1 /* CppDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				9EF58C0823BFEC2900D69D50 /* Madiator */,
 				9E0533BF23A2687800AEAF1E /* Iterator */,
 				9E5F17D52387F265002C0213 /* Interpreter */,
 				9ED0C069237A221800C3D1BB /* Command */,
@@ -458,12 +481,15 @@
 				9E79613022A7132A00A136CA /* Adapter.cpp in Sources */,
 				9EA7416E22A9D3FD00678B69 /* Person.cpp in Sources */,
 				9EA5CF692291F4C400B06B5D /* AbstractFactory.cpp in Sources */,
+				9EF58C1123BFEFFF00D69D50 /* MadiatorChatRoom.cpp in Sources */,
+				9EF58C0E23BFECC800D69D50 /* MadiatorPerson.cpp in Sources */,
 				9E39725B229F265B001436A7 /* Singleton.cpp in Sources */,
 				9EC4F7F4236268B400C5C52F /* PropertyProxy.cpp in Sources */,
 				9E608BE022C41E7F0013D7A2 /* Decorator.cpp in Sources */,
 				9E0C04A32280D64D00694419 /* LiskovSubstitutionPrinciple.cpp in Sources */,
 				9E5F17D82387F298002C0213 /* Interpreter.cpp in Sources */,
 				9E278F68236115CE009D475C /* FormattedText.cpp in Sources */,
+				9EF58C0B23BFEC9F00D69D50 /* Madiator.cpp in Sources */,
 				9E634D102281B4F70096C463 /* InterfaceSegregationPrinciple.cpp in Sources */,
 				9ECC61852288180D00E2CB15 /* PersonBuilder.cpp in Sources */,
 				9ECC6182228817BD00E2CB15 /* Person.cpp in Sources */,
