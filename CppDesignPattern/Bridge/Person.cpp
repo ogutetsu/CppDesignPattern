@@ -6,37 +6,42 @@
 //  Copyright © 2019 ogurotetsuro. All rights reserved.
 //
 
-#include "Person.hpp"
+#include "../Bridge/Person.hpp"
 #include <iostream>
 
 using namespace std;
 
-class Person::PersinImpl
+namespace Bridge
 {
-public:
-    void greet(Person* person);
-private:
-    
-    
-};
+
+    class Person::PersinImpl
+    {
+    public:
+        void greet(Person* person);
+    private:
 
 
-void Person::PersinImpl::greet(Person* person)
-{
-    cout << "hello my name is " << person->name << endl;
-}
+    };
 
-Person::Person() : impl(new PersinImpl)
-{
-    
-}
 
-Person::~Person()
-{
-    delete impl;
-}
+    void Person::PersinImpl::greet(Person* person)
+    {
+        cout << "hello my name is " << person->name << endl;
+    }
 
-void Person::greet()
-{
-    impl->greet(this);
+    Person::Person() : impl(new PersinImpl)
+    {
+
+    }
+
+    Person::~Person()
+    {
+        delete impl;
+    }
+
+    void Person::greet()
+    {
+        impl->greet(this);
+    }
+
 }

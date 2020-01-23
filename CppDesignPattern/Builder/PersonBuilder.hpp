@@ -10,7 +10,8 @@
 #define PersonBuilder_hpp
 
 #include <stdio.h>
-#include "Person.hpp"
+#include "../Builder/Person.hpp"
+
 
 class PersonAddressBuilder;
 class PersonJobBuilder;

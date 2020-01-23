@@ -6,10 +6,10 @@
 //  Copyright © 2019 ogurotetsuro. All rights reserved.
 //
 
-#include "Person.hpp"
+#include "../Builder/Person.hpp"
 #include "PersonBuilder.hpp"
 
 PersonBuilder Person::create()
 {
-    return PersonBuilder{};
+	return PersonBuilder{};
 }

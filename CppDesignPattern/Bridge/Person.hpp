@@ -14,19 +14,23 @@
 
 using namespace std;
 
-class Person {
-public:
-    string name;
-    
-    class PersinImpl;
-    PersinImpl* impl;
-    
-    Person();
-    ~Person();
-    
-    void greet();
+namespace Bridge
+{
 
-};
+    class Person {
+    public:
+        string name;
 
+        class PersinImpl;
+        PersinImpl* impl;
+
+        Person();
+        ~Person();
+
+        void greet();
+
+    };
+
+}
 
 #endif /* Person_hpp */

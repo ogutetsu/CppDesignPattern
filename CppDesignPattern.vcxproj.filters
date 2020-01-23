@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Adapter">
+      <UniqueIdentifier>{6c46dacd-3959-4115-b7a4-29b0b7cd8344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Bridge">
+      <UniqueIdentifier>{b0a25f1d-0db7-45d0-8f9b-9e17b19ad06d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Builder">
+      <UniqueIdentifier>{fe2e5655-abb4-4d28-9157-7467eb134790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Command">
+      <UniqueIdentifier>{43df9121-25c5-4c9a-b263-bdee6954a67b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Composite">
+      <UniqueIdentifier>{b30b069c-e85e-46d0-b1ef-03c71f79f73a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Debug">
+      <UniqueIdentifier>{113fc1cf-8f2e-4cf1-87ec-e7ce20c77f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Decorator">
+      <UniqueIdentifier>{890bb368-88b3-4fde-9bf1-102a047e0b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Facade">
+      <UniqueIdentifier>{8e55ebd4-808e-467b-bc08-91b40e7202c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Factory">
+      <UniqueIdentifier>{ac85d239-aa96-4799-a423-660b1e964542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Flyweight">
+      <UniqueIdentifier>{afcac1fd-0354-4c2c-8ed5-2ca164123a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Interpreter">
+      <UniqueIdentifier>{c168d2a5-3ba7-4ea1-a0c0-3bbf87b961ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Iterator">
+      <UniqueIdentifier>{23b780d5-dd58-4135-aecd-02c3589738f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Madiator">
+      <UniqueIdentifier>{d1cb59c3-9570-485b-be59-0ec641b48d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Prototype">
+      <UniqueIdentifier>{6b713ea1-68d6-4d64-99b9-3265f2922658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Proxy">
+      <UniqueIdentifier>{3e4eb2a2-22cb-4aa6-93e3-96b437786abe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Resposibility">
+      <UniqueIdentifier>{fdbca525-c81c-468c-83f4-8c0fa98e6f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Singleton">
+      <UniqueIdentifier>{b3e5b191-c8dd-471b-a7ef-e06feee4304b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SOLID">
+      <UniqueIdentifier>{b05a079c-e33c-4544-a79c-40bf525ff8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Adapter">
+      <UniqueIdentifier>{2ccbed4e-d1b7-4e36-b2d7-d3a2a51a1ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Bridge">
+      <UniqueIdentifier>{c7b1ea20-91b0-4708-9d14-e87b213f1f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Builder">
+      <UniqueIdentifier>{f30ca7e0-1236-497f-8a35-db22350ffcf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Command">
+      <UniqueIdentifier>{79e9918b-eb06-4810-985d-b48db97542be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Composite">
+      <UniqueIdentifier>{d9f26605-7423-4a6f-aec2-28fff10a6b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Debug">
+      <UniqueIdentifier>{aa6d75a2-bc84-418c-bdce-fffa95d305fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Decorator">
+      <UniqueIdentifier>{f5ca4ba2-9d5e-4595-a30c-8237df225b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Facade">
+      <UniqueIdentifier>{35d43e51-fb1f-4946-b2ed-91f0d9d5b861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Factory">
+      <UniqueIdentifier>{1ff4d5a9-66f1-4add-9894-4a3369a8540f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Flyweight">
+      <UniqueIdentifier>{5e3e18c5-3b81-4433-be6e-3a5e43291a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Interpreter">
+      <UniqueIdentifier>{2e48ec71-637e-4313-9cba-6852a9b83703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Iterator">
+      <UniqueIdentifier>{f400fba8-332d-44d3-ad8b-f30c8b083cb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Madiator">
+      <UniqueIdentifier>{824261a7-b49e-4103-a1f1-db2c8bfa2abb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Prototype">
+      <UniqueIdentifier>{c610f194-f1ad-444a-b609-11f2c8b01d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Proxy">
+      <UniqueIdentifier>{08d322fa-534d-46fc-99ec-3128c3d7e0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Responsibility">
+      <UniqueIdentifier>{7f8a11d1-4672-4833-a4d9-76e9704ff752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Singleton">
+      <UniqueIdentifier>{39ea59ac-e7ba-4eb8-aa92-ca11660f5392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SOLID">
+      <UniqueIdentifier>{365ea1b8-3885-4211-8dba-f5c4d7d2a3da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CppDesignPattern\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Adapter\Adapter.cpp">
+      <Filter>ソース ファイル\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Bridge\Bridge.cpp">
+      <Filter>ソース ファイル\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Bridge\Person.cpp">
+      <Filter>ソース ファイル\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Builder\Builder.cpp">
+      <Filter>ソース ファイル\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Builder\BuilderFactets.cpp">
+      <Filter>ソース ファイル\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Builder\GroovyStyle.cpp">
+      <Filter>ソース ファイル\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Builder\Person.cpp">
+      <Filter>ソース ファイル\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Builder\PersonBuilder.cpp">
+      <Filter>ソース ファイル\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Command\Command.cpp">
+      <Filter>ソース ファイル\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Composite\ArrayBacked.cpp">
+      <Filter>ソース ファイル\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Composite\Composite.cpp">
+      <Filter>ソース ファイル\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Composite\NeuralNetwork.cpp">
+      <Filter>ソース ファイル\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Decorator\Decorator.cpp">
+      <Filter>ソース ファイル\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Decorator\FunctionalDecorator.cpp">
+      <Filter>ソース ファイル\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Facade\Facade.cpp">
+      <Filter>ソース ファイル\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Factory\AbstractFactory.cpp">
+      <Filter>ソース ファイル\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Factory\Factory.cpp">
+      <Filter>ソース ファイル\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Flyweight\Flyweight.cpp">
+      <Filter>ソース ファイル\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Flyweight\FormattedText.cpp">
+      <Filter>ソース ファイル\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Interpreter\Interpreter.cpp">
+      <Filter>ソース ファイル\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Iterator\BinaryTreeIterator.cpp">
+      <Filter>ソース ファイル\Iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Madiator\EventBroker.cpp">
+      <Filter>ソース ファイル\Madiator</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Madiator\Madiator.cpp">
+      <Filter>ソース ファイル\Madiator</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Madiator\MadiatorChatRoom.cpp">
+      <Filter>ソース ファイル\Madiator</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Madiator\MadiatorPerson.cpp">
+      <Filter>ソース ファイル\Madiator</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\SOLID\DependencyInversionPrinciple.cpp">
+      <Filter>ソース ファイル\SOLID</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\SOLID\InterfaceSegregationPrinciple.cpp">
+      <Filter>ソース ファイル\SOLID</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\SOLID\LiskovSubstitutionPrinciple.cpp">
+      <Filter>ソース ファイル\SOLID</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\SOLID\OpenClosedPrinciple.cpp">
+      <Filter>ソース ファイル\SOLID</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\SOLID\SingleResponsibilityPrinciple.cpp">
+      <Filter>ソース ファイル\SOLID</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Singleton\Multiton.cpp">
+      <Filter>ソース ファイル\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Singleton\Printer.cpp">
+      <Filter>ソース ファイル\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Singleton\Singleton.cpp">
+      <Filter>ソース ファイル\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Responsibility\BrokerChain.cpp">
+      <Filter>ソース ファイル\Resposibility</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Responsibility\PointerChain.cpp">
+      <Filter>ソース ファイル\Resposibility</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Proxy\CommunictionProxy.cpp">
+      <Filter>ソース ファイル\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Proxy\PropertyProxy.cpp">
+      <Filter>ソース ファイル\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Proxy\VirtualProxy.cpp">
+      <Filter>ソース ファイル\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDesignPattern\Prototype\Prototype.cpp">
+      <Filter>ソース ファイル\Prototype</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CppDesignPattern\Adapter\Adapter.hpp">
+      <Filter>ヘッダー ファイル\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Adapter\Geometry.hpp">
+      <Filter>ヘッダー ファイル\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Bridge\Bridge.hpp">
+      <Filter>ヘッダー ファイル\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Bridge\Person.hpp">
+      <Filter>ヘッダー ファイル\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Builder\Builder.hpp">
+      <Filter>ヘッダー ファイル\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Builder\BuilderFactets.hpp">
+      <Filter>ヘッダー ファイル\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Builder\GroovyStyle.hpp">
+      <Filter>ヘッダー ファイル\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Builder\Person.hpp">
+      <Filter>ヘッダー ファイル\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Builder\PersonAddressBuilder.hpp">
+      <Filter>ヘッダー ファイル\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Builder\PersonBuilder.hpp">
+      <Filter>ヘッダー ファイル\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Builder\PersonJobBuilder.hpp">
+      <Filter>ヘッダー ファイル\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Command\Command.hpp">
+      <Filter>ヘッダー ファイル\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Composite\ArrayBacked.hpp">
+      <Filter>ヘッダー ファイル\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Composite\Composite.hpp">
+      <Filter>ヘッダー ファイル\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Composite\NeuralNetwork.hpp">
+      <Filter>ヘッダー ファイル\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Decorator\Decorator.hpp">
+      <Filter>ヘッダー ファイル\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Decorator\FunctionalDecorator.hpp">
+      <Filter>ヘッダー ファイル\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Facade\Facade.h">
+      <Filter>ヘッダー ファイル\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Factory\AbstractFactory.hpp">
+      <Filter>ヘッダー ファイル\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Factory\DrinkFactory.hpp">
+      <Filter>ヘッダー ファイル\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Factory\Factory.hpp">
+      <Filter>ヘッダー ファイル\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Factory\HotDrink.hpp">
+      <Filter>ヘッダー ファイル\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Factory\HotDrinkFactory.hpp">
+      <Filter>ヘッダー ファイル\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Flyweight\Flyweight.hpp">
+      <Filter>ヘッダー ファイル\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Flyweight\FormattedText.hpp">
+      <Filter>ヘッダー ファイル\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Interpreter\Interpreter.hpp">
+      <Filter>ヘッダー ファイル\Interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Iterator\BinaryTreeIterator.hpp">
+      <Filter>ヘッダー ファイル\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Madiator\EventBroker.hpp">
+      <Filter>ヘッダー ファイル\Madiator</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Madiator\Madiator.hpp">
+      <Filter>ヘッダー ファイル\Madiator</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Madiator\MadiatorChatRoom.hpp">
+      <Filter>ヘッダー ファイル\Madiator</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Madiator\MadiatorPerson.hpp">
+      <Filter>ヘッダー ファイル\Madiator</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\SOLID\DependencyInversionPrinciple.hpp">
+      <Filter>ヘッダー ファイル\SOLID</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\SOLID\InterfaceSegregationPrinciple.hpp">
+      <Filter>ヘッダー ファイル\SOLID</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\SOLID\LiskovSubstitutionPrinciple.hpp">
+      <Filter>ヘッダー ファイル\SOLID</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\SOLID\OpenClosedPrinciple.hpp">
+      <Filter>ヘッダー ファイル\SOLID</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\SOLID\SingleResponsibilityPrinciple.hpp">
+      <Filter>ヘッダー ファイル\SOLID</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Singleton\Multiton.hpp">
+      <Filter>ヘッダー ファイル\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Singleton\Printer.hpp">
+      <Filter>ヘッダー ファイル\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Singleton\Singleton.hpp">
+      <Filter>ヘッダー ファイル\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Responsibility\BrokerChain.hpp">
+      <Filter>ヘッダー ファイル\Responsibility</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Responsibility\PointerChain.hpp">
+      <Filter>ヘッダー ファイル\Responsibility</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Proxy\CommunictionProxy.hpp">
+      <Filter>ヘッダー ファイル\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Proxy\PropertyProxy.hpp">
+      <Filter>ヘッダー ファイル\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Proxy\VirtualProxy.hpp">
+      <Filter>ヘッダー ファイル\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDesignPattern\Prototype\Prototype.hpp">
+      <Filter>ヘッダー ファイル\Prototype</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
